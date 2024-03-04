@@ -1,8 +1,7 @@
 <apex:component controller="AccountDataTableController">
-
     <apex:dataTable var="account" value="{!accountList}">
-            <apex:column >{!account.Id}</apex:column>
-            <apex:column >{!account.name}</apex:column>
+        <apex:column >{!account.Id}</apex:column>
+        <apex:column >{!account.name}</apex:column>
     </apex:dataTable>
     <apex:form >
         <apex:commandButton disabled="{!(NOT(hasPrevious))}" value="<<" action="{!first}"></apex:commandButton>
