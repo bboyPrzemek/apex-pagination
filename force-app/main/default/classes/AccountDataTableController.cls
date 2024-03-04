@@ -1,5 +1,11 @@
 public with sharing class AccountDataTableController extends Pageable {
-    public List<Account> accountList {get {return (List<Account>) results;} set;}
+
+    public List<Account> accountList {
+        get {
+            return (List<Account>) results;
+        }
+        set;
+    }
 
     public AccountDataTableController() {
         super();
